@@ -22,4 +22,4 @@ jobs:
        # uses: siridevo/Dev/archive/github-actions-slack@v2.0.0
        # - name: checkout the repository
 env:
-  repository: siridevo/Dev
+  repository: siridevo/DEV
