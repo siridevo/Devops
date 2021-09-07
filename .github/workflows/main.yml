@@ -5,8 +5,6 @@ jobs:
   slack-ontifications:
     runs-on: ubuntu-20.04
     name: Sends a message to Slack when a push, a pull request or an issue is made
-    env:
-     repo: siridevo
     steps:
          - name: Send message to slack API
            uses: archive/github-actions-slack@v2.0.0
