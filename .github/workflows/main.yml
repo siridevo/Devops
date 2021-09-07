@@ -28,4 +28,5 @@ jobs:
              channel: devops
              color: warning
              repository: siridevo/*
+             MESSAGE: "Test notification from Github"
          
