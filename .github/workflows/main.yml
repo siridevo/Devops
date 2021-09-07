@@ -1,6 +1,6 @@
 name: slack-notification
-
 on: [push, pull_request]
+
 jobs: 
   slack-ontifications:
     runs-on: ubuntu-20.04
@@ -11,7 +11,7 @@ jobs:
            id: notify
            with: 
               slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
-              slack-channel: U02CM0E2USZ
+              slack-channel-id: U02CM0E2USZ
               slack-text: Hello! Event  "{{ github.event_name }}" in "${{ github.repository }}" 🤓
               
          - name: Result from "Send  after result send Message"
