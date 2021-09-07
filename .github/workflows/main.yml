@@ -1,6 +1,6 @@
 name: slack-notification
 
-on: [ push, pull_request ]
+on: [push, pull_request]
 jobs: 
   slack-ontifications:
     runs-on: ubuntu-20.04
