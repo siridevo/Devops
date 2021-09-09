@@ -1,6 +1,10 @@
 name: slack-notification
 on: [push, pull_request]
 
+env:
+  repository: siridevo/*
+   
+
 jobs: 
   slack-ontifications:
     runs-on: ubuntu-20.04
@@ -8,7 +12,6 @@ jobs:
     steps:
          - name: Send message to slack API
            uses: archive/github-actions-slack@v2.0.0
-           if: siridevo/*
            #if: sucess()
            id: notify
            with: 
